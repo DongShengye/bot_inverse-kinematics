@@ -1,8 +1,8 @@
-syms theta2 theta3 theta5
+syms theta1 theta2 theta3
 
 
 %[theta, alpha, r, d].
-matrix = [180 90 0 39;theta2+180 90 0 80;theta3 90 0 36;180 90 0 150;90+theta5 90 0 0;0 0 0 145];
+matrix = [180 90 0 39;theta1+180 90 0 80;theta2 90 0 36;180 90 0 150;90+theta3 90 0 0;0 0 0 145];
 %matrix = [90 90 0 39;180+theta2 90 0 80;theta3 90 0 36];
 transm = DH_HTM(matrix,'d');
 
@@ -10,9 +10,9 @@ tran1 = [0 0 -1 0;0 1 0 0;1 0 0 0;0 0 0 1];
 tran2 = [1 0 0 0;0 0 1 0;0 -1 0 0;0 0 0 1];
 transm = tran1*tran2*transm;
 
-theta2 = 0;
-theta3 = 90;
-theta5 = 0;
+theta1 = -17;
+theta2 = -19;
+theta3 = -9.5;
 
 x_end = transm(1,4)
 y_end = transm(2,4)

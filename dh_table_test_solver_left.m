@@ -1,4 +1,4 @@
-syms theta6 theta5 theta4
+syms theta2 theta3 theta5
 
 
 
@@ -13,14 +13,14 @@ x_end = simplify(transm(1,4));
 y_end = simplify(transm(2,4));
 z_end = simplify(transm(3,4));
 
-disp(x_end);
-disp(y_end);
-disp(z_end);
+%disp(x_end);
+%disp(y_end);
+%disp(z_end);
 
 %set up ranges
 %theta6_range = [-45,45];
 %theta5_range = [-80,80];
 %theta4_range = [-45,45];
 
-Y = vpasolve([x_end == 130, y_end == -202, z_end == 75], [theta6,theta5,theta4]);
+Y = vpasolve([x_end == 77.47, y_end == 75, z_end == 294.98], [theta2,theta3,theta5]);
 disp(Y)

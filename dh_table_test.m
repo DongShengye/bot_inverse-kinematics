@@ -8,13 +8,13 @@ transm = DH_HTM(matrix,'d');
 tran1 = [1 0 0 0;0 0 -1 0;0 1 0 0;0 0 0 1];
 transm = tran1*transm;
 
-theta6 = 0;
-theta5 = 0;
-theta4 = 0;
+theta6 = 17.5;
+theta5 = 19.87;
+theta4 = 9.5;
 
-x_end = transm(1,4);
-y_end = transm(2,4);
-z_end = transm(3,4);
+x_end = transm(1,4)
+y_end = transm(2,4)
+z_end = transm(3,4)
 
 %set up ranges
 theta6_range = [-45,45];
